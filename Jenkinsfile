@@ -6,15 +6,17 @@ pipeline {
 	}
 			
 	environment {
-        IDF_PATH = "/esp-idf"
+        IDF_PATH = "./esp-idf"
     }
 	
     stages {
         stage('Build') { 
             steps {
+				sh 'ls'
 			    sh 'git submodule update --init --recursive'
 			    sh 'cd hello_world && ls && make -j4'
             }
         }
     }
 }
+
