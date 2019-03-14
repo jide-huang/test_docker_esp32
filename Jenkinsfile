@@ -10,6 +10,7 @@ pipeline {
             steps {
 			    sh 'ls'
 			    sh 'cd hello_world'
+				sh 'ls'
                 sh 'make -j4' 
             }
         }
