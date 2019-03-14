@@ -6,7 +6,7 @@ pipeline {
 	}
 			
 	environment {
-        IDF_PATH = "./esp-idf"
+        IDF_PATH = "/var/jenkins_home/workspace/test_docker_esp32_master/esp-idf"
     }
 	
     stages {
