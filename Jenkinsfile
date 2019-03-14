@@ -9,7 +9,7 @@ pipeline {
             }
             steps {
 			    sh 'ls'
-			    sh 'cd hello_world && make -j4'
+			    sh 'cd hello_world && ls && make -j4'
             }
         }
     }
