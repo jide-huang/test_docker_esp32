@@ -8,7 +8,8 @@ pipeline {
                 }
             }
             steps {
-			    sh 'cd main'
+			    sh 'ls'
+			    sh 'cd hello_world'
                 sh 'make -j4' 
             }
         }
