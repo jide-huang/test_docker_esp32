@@ -6,7 +6,7 @@ pipeline {
 	}
 			
 	environment {
-        IDF_PATH = "$CI_PROJECT_DIR/esp-idf"
+        IDF_PATH = "/esp-idf"
     }
 	
     stages {
