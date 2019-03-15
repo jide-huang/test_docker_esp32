@@ -15,7 +15,7 @@ pipeline {
 				sh 'ls && pwd'
 				sh 'cd esp-idf && git fetch && git checkout release/v3.3'
 			    sh 'git submodule update --init --recursive'
-			    sh 'cd hello_world && ls && make -j4'
+			    sh 'cd hello_world && ls && make oldconfig && make -j4'
             }
         }
     }
