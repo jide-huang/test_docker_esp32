@@ -10,6 +10,12 @@ pipeline {
     }
 	
     stages {
+        stage('AAA') { 
+            steps {
+				sh 'cd /dev && ls'
+            }
+        }
+	
         stage('Build') { 
             steps {
 				sh 'ls && pwd'
