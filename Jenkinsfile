@@ -4,10 +4,6 @@ pipeline {
 			image 'voltstorage/esp32' 
 		}
 	}
-			
-	environment {
-        IDF_PATH = "/var/jenkins_home/workspace/test_docker_esp32_master/esp-idf"
-    }
 	
     stages {
         stage('Build') { 
