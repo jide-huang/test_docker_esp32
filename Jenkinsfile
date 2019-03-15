@@ -1,7 +1,7 @@
 pipeline {
 	agent {
 		docker {
-			image 'espressif/esp32-ci-env' 
+			image 'voltstorage/esp32' 
 		}
 	}
 			
@@ -10,12 +10,6 @@ pipeline {
     }
 	
     stages {
-        stage('AAA') { 
-            steps {
-				sh 'cd /dev && ls'
-            }
-        }
-	
         stage('Build') { 
             steps {
 				sh 'ls && pwd'
